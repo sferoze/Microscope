@@ -1,5 +1,6 @@
 Accounts.config({
-  sendVerificationEmail: true,
+  sendVerificationEmail: false,
   forbidClientAccountCreation: false
 });
  
+Accounts.emailTemplates.siteName = "Microscope";

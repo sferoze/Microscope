@@ -1,5 +1,20 @@
 Posts = new Meteor.Collection('posts');
 
+Posts.allow({
+	insert: function(userId, doc) {
+		// only allow posting if you are logged in
+		return !! userId;
+		},
+	update: function(userId, doc) {
+		// only allow updates if you are logged in,
+		return !! userId;
+		},
+	remove: function(userId, doc) {
+		// only allow remove if you are logged in
+		return !! userId;
+		}
+});
+
 Meteor.methods({
 	post: function(postAttributes) {
 		var user = Meteor.user(),
