@@ -1,19 +1,19 @@
 if (Posts.find().count() === 0) {
   Posts.insert({
-    title: 'Introducing Telescope',
-    author: 'Sacha Greif',
-    url: 'http://sachagreif.com/introducing-telescope/'
+    title: 'Setting up mpeg-streamer on Raspberry Pi',
+    author: 'Feroze',
+    url: 'http://wolfpaulus.com/jounal/embedded/raspberrypi_webcam/'
   });
   
   Posts.insert({
-    title: 'Meteor',
-    author: 'Tom Coleman',
-    url: 'http://meteor.com'
+    title: 'Meteor Docs',
+    author: 'Feroze',
+    url: 'http://docs.meteor.com'
   });
   
   Posts.insert({
     title: 'The Meteor Book',
-    author: 'Tom Coleman',
+    author: 'Feroze',
     url: 'http://themeteorbook.com'
   });
 }

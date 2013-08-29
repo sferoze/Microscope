@@ -33,6 +33,10 @@ Template.postEdit.events({
 			Posts.remove(currentPostId);
 			Meteor.Router.to('postsList');
 		}
+		},
+	'click #cancel': function(e) {
+		Meteor.Router.to('postsList');
 	}
+
 });
 
